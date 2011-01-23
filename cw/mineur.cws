@@ -1,0 +1,14 @@
+; #### Renaudeau Gaetan ####
+; ##########################
+
+; Attaque les 4 en 4 cases memoires precedentes par l'envoi d'un 0
+; Vitesse : une attaque de type "bombe" tous les deux tours.
+
+; c'est le miroir du nain, mais legerement plus lent au depart
+
+
+MOV #-5 @3	; attaque sur A
+ADD #-4 2	; decalage de 5 de la position de A
+JMP -2		; retour sur attaque
+DAT -4		; adresse d'attaque A
+

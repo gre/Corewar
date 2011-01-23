@@ -1,0 +1,8 @@
+; #### Renaudeau Gaetan ####
+; ##########################
+
+; protection des attaques mobiles par l'arriere (une seule attaque devant au debut)
+
+
+MOV #-3 @2 
+JMP -1

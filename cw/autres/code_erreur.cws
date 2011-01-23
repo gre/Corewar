@@ -1,0 +1,19 @@
+; Ce code ne fonctionne pas
+; Il permet de tester la gestion des erreurs du compilateur
+
+Mov
+
+
+Mov 34 ##12 ; bbblalalala
+bla bla bla
+mov faux texte !
+dat 5 4
+
+dat @@5
+dat @-5
+
+dat -33133
+
+MOV	0	1
+
+	;  jmz 5e 4e 3e 7e 5e

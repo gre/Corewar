@@ -1,0 +1,26 @@
+; #### Renaudeau Gaetan ####
+; ##########################
+
+; concu pour eviter l'idiot (MOV 0 1) : l'idiot ne gagne jamais !
+
+; en deux phases : 
+; on cherche un encadrement de l'adversaire, 
+; puis on attaque dans l'encadrement trouve
+
+; /!\ il existe des dommages colaterales
+
+SUB #13 5
+ADD #13 5
+JMN 5 @3
+JMN 4 @3
+JMP -4
+DAT 6	; avant
+DAT 6	; apres
+
+; on a localise l'adversaire dans un encadrement, on attaque en retraicissant l'encadrement
+
+MOV #0 @-1
+ADD #1 -2
+MOV #0 @-4
+SUB #1 -5
+JMP -4

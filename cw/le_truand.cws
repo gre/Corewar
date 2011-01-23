@@ -1,0 +1,13 @@
+; #### Renaudeau Gaetan ####
+; ##########################
+
+; il cherche a detruire le_bon
+
+
+SUB #14 -1
+MOV #0 @-2
+
+ADD #14 3
+MOV #0 @2
+
+JMP -4
